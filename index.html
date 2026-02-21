@@ -1,76 +1,97 @@
-!DOCTYPE html
-html lang=ru
-head
-  meta charset=UTF-8
-  titleАкция дняtitle
-  meta name=viewport content=width=device-width, initial-scale=1.0
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Акция дня</title>
 
-  style
+  <style>
+    /* Основные стили */
     body {
-      margin 0;
-      font-family Arial, sans-serif;
-      background #f5f5f5;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
     }
 
     .card {
-      max-width 400px;
-      margin 20px auto;
-      background #ffffff;
-      border-radius 16px;
-      overflow hidden;
-      box-shadow 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
     }
 
     .card img {
-      width 100%;
-      display block;
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .content {
-      padding 16px;
+      padding: 16px;
     }
 
     h1 {
-      font-size 20px;
-      margin 0 0 10px;
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #2ea6ff;
     }
 
     p {
-      font-size 14px;
-      color #444;
-      margin 0 0 16px;
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 16px;
     }
 
     .btn {
-      display block;
-      text-align center;
-      padding 14px;
-      background #2ea6ff;
-      color white;
-      text-decoration none;
-      border-radius 10px;
-      font-weight bold;
+      display: block;
+      text-align: center;
+      padding: 14px;
+      background-color: #2ea6ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s;
     }
-  style
-head
 
-body
+    .btn:hover {
+      background-color: #1a88c6;
+    }
 
-  div class=card
-    img src=httpsvia.placeholder.com400x250 alt=Акция
+  </style>
+</head>
 
-    div class=content
-      h1🔥 Акция дняh1
-      p
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/400x250" alt="Акция">
+
+    <div class="content">
+      <h1>🔥 Акция дня</h1>
+      <p>
         Витамины для энергии и иммунитета.  
         Только сегодня — скидка 30%.
-      p
+      </p>
 
-      a class=btn href=httpst.meusername
+      <a class="btn" href="https://t.me/username">
         Заказать
-      a
-    div
-  div
+      </a>
+    </div>
+  </div>
 
-body
-html
+</body>
+</html>
